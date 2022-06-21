@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" href="/images/logo_web.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <%- include("partials/user_sidebar") %>
+
+      <div id="content" class="p-4 p-md-5">
+        <%- include("partials/user_navbar") %>
+
+        <!-- Thông báo  -->
+        <%- include("partials/user_header") %>
+
+        <div class="list-group">
+          <!--Phân trang tin-->
+          <div class="pagination">
+            <% for (var i = 0; i < pages; i++) { %>
+              <a href="/users/thongbao/<%= i+1%>"><%= i+1%></a>
+            <% } %>
+          </div>
+
+          <!--Bảng tin-->
+          <table class="newsfeeds">
+            <% for (var i = 0; i < products.length; i++) { %>
+            <tr>
+              <th><p><%= products[i].name %></p></th>
+              <th>
+                <a
+                  href="/users/thongbao/chitiet/<%= products[i]._id %>"
+                  class="float-right"
+                  >Chi tiết</a
+                >
+              </th>
+            </tr>
+            <% } %>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

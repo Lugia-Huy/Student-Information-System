@@ -1,0 +1,57 @@
+<nav id="sidebar">
+    <div class="p-4 pt-5">
+      <h1>THÔNG BÁO</h1>
+      <a
+        href="/users/profile"
+        class="img logo rounded-circle mb-5"
+        style="background-image: url('<%= currentuser.cover %>')"
+      ></a>
+      <p><%= currentuser.name %></p>
+      <ul class="list-unstyled components mb-5">
+        <li>
+          <a href="/users" class="fa fa-home">&nbsp;Trang chủ</a>
+        </li>
+        <li>
+          <a
+            href="#pageSubmenu"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="fa fa-th-list"
+          >
+            Phân loại thông tin
+            <i class="fa fa-caret-down" aria-hidden="true"></i
+          ></a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="/users/phongban" class="fa fa-users">&nbsp;Phòng ban</a>
+            </li>
+            <li>
+              <a href="/users/chude" class="fa fa-picture-o">&nbsp;Chủ đề</a>
+            </li>
+            <li>
+              <a href="/users/thongbao/1" class="fa fa-list-alt">&nbsp;Tất cả thông báo</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="/logout" class="fa fa-sign-out">&nbsp;Thoát</a>
+        </li>
+      </ul>
+  
+      <div class="footer">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          | This web is made with
+          <i class="icon-heart" aria-hidden="true"></i> by
+          <a
+            href=""
+            target="_blank"
+            >518H0020 & 518h0497</a
+          >
+        </p>
+      </div>
+    </div>
+  </nav>

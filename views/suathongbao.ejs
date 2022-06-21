@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" href="/images/logo_web.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <%- include("partials/sidebar") %>
+
+      <div id="content" class="p-4 p-md-5">
+        <%- include("partials/navbar") %>
+
+        <!-- Thông tin cá nhân  -->
+        <div class="container">
+          <h2>Sửa thông báo</h2>
+          <form action="/thongbao/suathongbao/<%= products._id %>" method="POST">
+              <div class="form-group">
+                  <label>Tên tiêu đề:</label>
+                  <input class="form-control" type="text" name='newsName' value="<%= products.name %>">
+              </div>
+              <div class="form-group">
+                <label for="newsTopic">Chọn chủ đề:</label>
+                <select name="newsTopic" id="topic">
+                  <% for (var i = 0; i < topics.length; i++) { %>
+                    <option value="<%= topics[i].name %>"><%= topics[i].name %></option>
+                  <% } %>
+                  
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="newsDepartment">Chọn phòng ban:</label>
+                <select name="newsDepartment" id="newsDepartment">
+                  <% for (var i = 0; i < departments.length; i++) { %>
+                    <option value="<%= departments[i].name %>"><%= departments[i].name %></option>
+                  <% } %>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label>Nội dung:</label>
+                  <input class="form-control" type="text" rows="3" name='newsContent' value="<%= products.content %>">
+              </div>
+              <input id="add-btn" class="btn btn-primary" type="submit" value="Cập nhật thông báo">
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "609f6117d4bbf82e0c4a85d5"
+  },
+  "name": "Đăng ký cổ vũ CLB bóng đá",
+  "topic": "Sự kiện",
+  "department": "Khoa Công nghệ thông tin",
+  "content": "cổ vũ cho clb bóng đá của khoa",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609f654cd43f51064410d345"
+  },
+  "name": "Về việc đóng học phí HK2 2020-2021",
+  "topic": "Học phí",
+  "department": "Phòng tài chính",
+  "content": "đóng học phí",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609f8899db8412121cb7b031"
+  },
+  "name": "Tuyển sinh viên tập sự cho doanh nghiệp VCB",
+  "topic": "Tuyển dụng",
+  "department": "Khoa Tài chính ngân hàng",
+  "content": "Tuyển sinh viên năm 3 trở đi có kết quả học tập tốt, đủ kiều kiện đi thực tập.",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609f88f3db8412121cb7b032"
+  },
+  "name": "Phòng Tài chính ban hành hướng dẫn các bước thanh toán học phí qua ngân hàng",
+  "topic": "Học phí",
+  "department": "Phòng tài chính",
+  "content": "Sinh viên thực hiện đóng học phí theo hướng dẫn các bước thanh toán học phí qua ngân hàng",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609f892edb8412121cb7b033"
+  },
+  "name": "NỘI DUNG CỐ VẤN HỌC TẬP SINH HOẠT CHỦ NHIỆM THÁNG 11/2020 (dành cho khóa tuyển sinh 2019 trở về trước)",
+  "topic": "Sinh hoạt chủ nhiệm",
+  "department": "Phòng Công tác học sinh sinh viên",
+  "content": "Lịch sinh hoạt chủ nhiệm cho sinh viên các khóa",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609f8c40db8412121cb7b034"
+  },
+  "name": "Thông báo dừng tổ chức thi tiếng Anh - HK1/2020-2021 giai đoạn 1 - ngày thi 16/05/2021",
+  "topic": "Lịch thi - Danh sách thi",
+  "department": "TDT Creative Language Center",
+  "content": "Do ảnh hưởng dịch covid-19, trung tâm quyết định tạm hoãn lịch tổ chức thi tiếng Anh - HK1/2020-2021 giai đoạn 1 - ngày thi 16/05/2021.\r\nSinh viên tiếp tục theo dõi cập nhật của trung tâm để biết thêm thông tin chi tiết về lịch thi mới.",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "609fcfc6e318330698ac23ee"
+  },
+  "name": "Về việc đóng học phí HK1 2020-2021",
+  "topic": "Học phí",
+  "department": "Phòng tài chính",
+  "content": "đóng học phí",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "60a0882ac51de9085818abe3"
+  },
+  "name": "Tham gia hội nghị khoa học công nghệ",
+  "topic": "Sự kiện",
+  "department": "Khoa Công nghệ thông tin",
+  "content": "Tham gia hội nghị khoa học công nghệ tại hội trường 2A",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+},{
+  "_id": {
+    "$oid": "60a0c01826bf242de87f4dd4"
+  },
+  "name": "Thông báo mới về tình hình dịch bệnh covid-19 ngày 15/5",
+  "topic": "Bảo hiểm y tế",
+  "department": "Phòng Công tác học sinh sinh viên",
+  "content": "Tình hình dịch đang tiến triển tốt hơn",
+  "__v": 0,
+  "created": "2021-05-16T06:26:34.158+00:00"
+}]

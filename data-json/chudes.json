@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "609f73b16b91c019a8da96e3"
+  },
+  "name": "Tất cả",
+  "content": "Tất cả các chủ đề",
+  "__v": 0,
+  "cover": "all.png"
+},{
+  "_id": {
+    "$oid": "609f73d86b91c019a8da96e4"
+  },
+  "name": "Bảo hiểm y tế",
+  "content": "Các vấn đề liên quan đến sức khỏe sinh viên - cộng đồng",
+  "__v": 0,
+  "cover": "yte.jpg"
+},{
+  "_id": {
+    "$oid": "609f73f76b91c019a8da96e5"
+  },
+  "name": "Học vụ",
+  "content": "Về các vấn đề học vụ của sinh viên",
+  "__v": 0,
+  "cover": "hocvu.png"
+},{
+  "_id": {
+    "$oid": "609f74126b91c019a8da96e6"
+  },
+  "name": "Lịch thi - Danh sách thi",
+  "content": "Lịch thi - Danh sách thi các học kì",
+  "__v": 0,
+  "cover": "lichthi.jpg"
+},{
+  "_id": {
+    "$oid": "609f74226b91c019a8da96e7"
+  },
+  "name": "Sự kiện",
+  "content": "Các sự kiện đang diễn ra",
+  "__v": 0,
+  "cover": "event.jpg"
+},{
+  "_id": {
+    "$oid": "609f74386b91c019a8da96e8"
+  },
+  "name": "Đăng ký môn học",
+  "content": "Đăng ký môn học dành cho sinh viên các khóa",
+  "__v": 0,
+  "cover": "dangkytkb.jpg"
+},{
+  "_id": {
+    "$oid": "609f74496b91c019a8da96e9"
+  },
+  "name": "Thời khóa biểu",
+  "content": "Thời khóa biểu của sinh viên",
+  "__v": 0,
+  "cover": "TKB.png"
+},{
+  "_id": {
+    "$oid": "609f74576b91c019a8da96ea"
+  },
+  "name": "Tốt nghiệp",
+  "content": "Các vấn đề của sinh viên tốt nghiệp",
+  "__v": 0,
+  "cover": "totnghiep.jpg"
+},{
+  "_id": {
+    "$oid": "609f745c6b91c019a8da96eb"
+  },
+  "name": "Sự kiện sắp diễn ra",
+  "content": "Sự kiện sắp diễn ra",
+  "__v": 0,
+  "cover": "eventnew.jpg"
+},{
+  "_id": {
+    "$oid": "609f746b6b91c019a8da96ec"
+  },
+  "name": "Học phí",
+  "content": "Các vấn đề về việc chi trả học phí",
+  "__v": 0,
+  "cover": "hocphi.png"
+},{
+  "_id": {
+    "$oid": "609f74926b91c019a8da96ed"
+  },
+  "name": "Cơ sở tin học(MOS)",
+  "content": "Về việc bằng cấp MOS cho sinh viên",
+  "__v": 0,
+  "cover": "tinhocmos.png"
+},{
+  "_id": {
+    "$oid": "609f74a16b91c019a8da96ee"
+  },
+  "name": "Tuyển dụng",
+  "content": "Tuyển dụng sinh viên của các doanh nghiệp",
+  "__v": 0,
+  "cover": "tuyendung.png"
+},{
+  "_id": {
+    "$oid": "609f74c96b91c019a8da96ef"
+  },
+  "name": "Phúc khảo",
+  "content": "Thời gian, địa điểm sinh viên làm phúc khảo bài thi, điểm học tập",
+  "__v": 0,
+  "cover": "phuckhao.png"
+},{
+  "_id": {
+    "$oid": "609f74dc6b91c019a8da96f0"
+  },
+  "name": "Học phần nghề nghiệp",
+  "content": "Học phần nghề nghiệp của sinh viên cuối khóa",
+  "__v": 0,
+  "cover": "hocphannghenghiep.jpg"
+},{
+  "_id": {
+    "$oid": "609f74e76b91c019a8da96f1"
+  },
+  "name": "Tập sự nghề nghiệp",
+  "content": "Tập sự nghề nghiệp sinh viên cuối khóa",
+  "__v": 0,
+  "cover": "tapsunghenghiep.png"
+},{
+  "_id": {
+    "$oid": "609f74fe6b91c019a8da96f2"
+  },
+  "name": "Sinh hoạt chủ nhiệm",
+  "content": "Thông báo lịch sinh hoạt chủ nhiệm cho sinh viên các khóa",
+  "__v": 0,
+  "cover": "sinhhoatchunhiem.jpg"
+},{
+  "_id": {
+    "$oid": "609f75146b91c019a8da96f3"
+  },
+  "name": "Chính sách - Học bổng",
+  "content": "Chính sách - Học bổng cho sinh viên khó khăn, có thành tích tốt",
+  "__v": 0,
+  "cover": "hocbong.jpg"
+},{
+  "_id": {
+    "$oid": "609f75276b91c019a8da96f4"
+  },
+  "name": "Kế hoạch",
+  "content": "Kế hoạch, định hướng phát triển trong tương lai",
+  "__v": 0,
+  "cover": "kehoach.png"
+},{
+  "_id": {
+    "$oid": "609f75306b91c019a8da96f5"
+  },
+  "name": "Hướng dẫn",
+  "content": "Hướng dẫn sinh viên",
+  "__v": 0,
+  "cover": "huongdan.png"
+},{
+  "_id": {
+    "$oid": "609f75426b91c019a8da96f6"
+  },
+  "name": "Thông báo chiêu sinh",
+  "content": "Thông báo chiêu sinh, tuyển sinh sinh viên khóa mới",
+  "__v": 0,
+  "cover": "chieusinh.png"
+},{
+  "_id": {
+    "$oid": "609f754d6b91c019a8da96f7"
+  },
+  "name": "Thông báo khác",
+  "content": "Các thông báo khác",
+  "__v": 0,
+  "cover": "phuckhao.png"
+},{
+  "_id": {
+    "$oid": "609f75576b91c019a8da96f8"
+  },
+  "name": "Quy định - Quy chế",
+  "content": "Quy định - Quy chế của nhà trường",
+  "__v": 0,
+  "cover": "quydinh.png"
+}]

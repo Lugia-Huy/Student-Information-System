@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="icon" href="/images/logo_web.jpg" type="image/jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <%- include("partials/mod_sidebar") %>
+
+      <div id="content">
+        <%- include("partials/mod_navbar") %>
+
+        <!-- Time line  -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-1 col-xl-1 mt-2"></div>
+            <div class="col-lg-6 col-xl-6 mt-2">
+              <form
+                action="/mod/thembaiviet"
+                method="post"
+                id="addnews"
+                name="post"
+                enctype="multipart/form-data"
+              >
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media mt-2 shadow-textarea">
+                      <img
+                        class="rounded-circle mx-3 align-self-center"
+                        src="<%= currentuser.cover %>"
+                        alt="image"
+                        width="55"
+                      />
+                      <div class="media-body mr-2">
+                        <div class="form-group basic-textarea rounded-corners">
+                          <textarea
+                            class="form-control"
+                            id="postsContent"
+                            name="postsContent"
+                            rows="1"
+                            placeholder="   What do you think..."
+                          ></textarea>
+                        </div>
+                        <textarea
+                            class="form-control"
+                            id="postsLinkyoutube"
+                            name="postsLinkyoutube"
+                            rows="1"
+                            placeholder="Tag your link video here (If you would)"
+                          ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-footer">
+                    Tải ảnh
+                    <input type="file" name="postsImage" value=""/>
+                    <button
+                      type="submit"
+                      name="btn_submit"
+                      class="btn btn-primary float-right"
+                    >
+                      Post
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- post  -->
+              <% for (var i = 0; i < posts.length; i++) { %>
+              <div class="card gedf-card mt-4">
+                <div class="card-header">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="mr-2">
+                        <img
+                          class="rounded-circle"
+                          width="45"
+                          src="<%= posts[i].user_cover %>"
+                          alt=""
+                        /> 
+                      </div>
+                      <div class="ml-2">
+                        <div class="h5 m-0"><a href=""><%= posts[i].user %></a></div>
+                        <div class="text-muted h7 mb-2">
+                          <i class="fa fa-clock-o"></i>&nbsp;<%=
+                          posts[i].created %>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-link dropdown-toggle"
+                          type="button"
+                          id="gedf-drop1"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="fa fa-ellipsis-h"></i>
+                        </button>
+                        <div
+                          class="dropdown-menu dropdown-menu-right"
+                          aria-labelledby="gedf-drop1"
+                        >
+                          <div class="h6 dropdown-header">Configuration</div>
+                          <a
+                            class="dropdown-item"
+                            href="/mod/post/<%= posts[i]._id %>/delete"
+                            >Delete</a
+                          >
+                          <a
+                            class="dropdown-item"
+                            data-toggle="modal"
+                            data-target="#myModal"
+                            >Edit</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p><%= posts[i].content %></p>
+                  <% if (posts[i].linkimage != '') {%>
+                  <img
+                    id="newsimage"
+                    src="<%= posts[i].linkimage %>"
+                    alt=" "
+					class="postpicture"
+                  />
+                  <% } %>
+                  <% if (posts[i].linkyoutube != '') {%>
+						<a href="<%= posts[i].linkyoutube %>" target="_blank"><%= posts[i].linkyoutube %></a>
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/<%= posts[i].linkembed %>" frameborder="0" allowfullscreen>
+						</iframe>
+                    <% } %>
+                  <hr />
+                  <!-- comment  -->
+                  <table width="100%">
+					<colgroup>
+						<col style="width:10%">
+						<col style="width:80%">
+						<col style="width:10%">
+					</colgroup> 
+                    <% for (var j = 0; j < comments.length; j++) { %> <% if
+                    (comments[j].post.indexOf(posts[i]._id) !== -1) {%>
+                    <tr>
+                      <th rowspan="2">
+                        <img
+                          class="rounded-circle mx-2 align-self-center"
+                          src="<%= comments[j].user_cover %>"
+                          alt="image"
+                          width="45"
+                        />
+                      </th>
+                      <th><h6><%= comments[j].user %></h6></th>
+                      <% if (comments[j].user == currentuser.name) {%>
+                      <th>
+                        <a
+                          class="delttt"
+                          href="/mod/comment/<%= comments[j]._id %>/delete"
+                          >Xóa</a
+                        >
+                      </th>
+                      <% } %>
+                    </tr>
+                    <tr>
+                      <td><p><%= comments[j].content %></p></td>
+                      <td></td>
+                    </tr>
+                    <% } %> <% } %>
+                  </table>
+                  <div class="line1">
+                    <hr />
+                    <!-- comment  -->
+                    <form
+                      action="/mod/comment/:<%= posts[i]._id %>"
+                      method="post"
+                      id="com"
+                      name="com"
+                    >
+                      <div class="media mt-3 shadow-textarea">
+                        <img
+                          class="rounded-circle mx-2 align-self-center"
+                          src="<%= currentuser.cover %>"
+                          alt="image"
+                          width="45"
+                        />
+                        <div class="media-body mr-2">
+                          <div
+                            class="form-group basic-textarea rounded-corners"
+                          >
+                            <textarea
+                              class="form-control"
+                              id="comment"
+                              name="comment"
+                              rows="1"
+                              placeholder="   Write your comment..."
+                            ></textarea>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          name="btn_submit"
+                          class="btn btn-primary float-right"
+                        >
+                          Post
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <form action="/mod/post/<%= posts[i]._id %>/update" method="post" id="updatepost" name="updatepost" enctype="multipart/form-data">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" float="left">Chỉnh sửa post</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <label for="newpostContent">Nội dung:</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="newpostContent"
+                          value="<%= posts[i].content %>"
+                        />
+                        <label for="newpostYoutube">Link YTB:</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="newpostYoutube"
+                          value="<%= posts[i].linkyoutube %>"
+                        />
+                        <label for="newpostImage">Ảnh:</label>
+                        <input
+                          class="form-control"
+                          type="file"
+                          name="newpostImage"
+                        />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                        >
+                          Cập nhật
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <% } %>
+            </div>
+
+			<div class="col-lg-1 col-xl-1 mt-2"></div>
+            <!-- thông báo  -->
+            <div class="col-lg-4 col-xl-3 mt-3">
+              <%- include("partials/mod_thongbaomoi") %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

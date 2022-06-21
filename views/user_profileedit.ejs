@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" href="/images/logo_web.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <%- include("partials/user_sidebar") %>
+
+      <div id="content" class="p-4 p-md-5">
+        <%- include("partials/user_navbar") %>
+
+        <!-- Thông tin cá nhân  -->
+        <div class="container emp-profile">
+          <form action="/users/profile/edit/<%= currentuser._id %>" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile-img">
+                  <img src="<%= currentuser.cover %>" alt="" />
+                  <div class="file btn btn-lg btn-primary">
+                    Đổi ảnh đại diện
+                    <input type="file" name="userImage"/>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="profile-head">
+                  <h5><%= currentuser.name %></h5>
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="home-tab"
+                        data-toggle="tab"
+                        href="#home"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                        >Thông tin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content profile-tab" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Mã sinh viên/Giảng viên</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          name="userIdstudent"
+                          value="<%= currentuser.mssv %>"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Họ tên</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="userName" value="<%= currentuser.name %>" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Email</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          name="userEmail"
+                          value="<%= currentuser.email %>"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Password</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="password"
+                          name="userPass"
+                          value="<%= currentuser.password %>"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Lớp</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="userClass" value="<%= currentuser.classs %>" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Khoa</label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="userFaculty" value="<%= currentuser.faculty %>" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Role</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p><%= currentuser.role %></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <input
+                  type="submit"
+                  class="profile-submit-btn"
+                  name="btnSubmitInfo"
+                  value="Cập nhật thông tin"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

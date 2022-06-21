@@ -1,0 +1,155 @@
+[{
+  "_id": {
+    "$oid": "609f6c60ea7a570934f51ad3"
+  },
+  "name": "Phòng Công tác học sinh sinh viên",
+  "content": "Quản lý công tác học tập, sinh hoạt, nề nếp của sinh viên",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f6eb70c65e4396c819e13"
+  },
+  "name": "Phòng Đại học",
+  "content": "Quản lý các hoạt động của sinh viên trong thời gian HSSV chưa tốt nghiệp",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f6f700c65e4396c819e14"
+  },
+  "name": "Phòng Sau đại học",
+  "content": "Quản lý các hoạt động của cựu sinh viên sau khi tốt nghiệp",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f6fa00c65e4396c819e15"
+  },
+  "name": "Phòng điện toán và máy tính",
+  "content": "Quản lý các công việc liên quan đến máy móc, cơ sở kĩ thuật, hệ thống tin học",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f6fde0c65e4396c819e16"
+  },
+  "name": "Phòng khảo thí và kiểm định chất lượng",
+  "content": "Khảo thí và kiểm định chất lượng cơ sở vật chất",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70000c65e4396c819e17"
+  },
+  "name": "Phòng tài chính",
+  "content": "Quản lý chi thu, tiền học phí, lương công nhân viên",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70260c65e4396c819e18"
+  },
+  "name": "TDT Creative Language Center",
+  "content": "Trung tâm ngoại ngữ đào tạo cho sinh viên trước và sau đại học",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f703f0c65e4396c819e19"
+  },
+  "name": "Trung tâm tin học",
+  "content": "Quản lý các công việc về cơ sở tin học",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70660c65e4396c819e1a"
+  },
+  "name": "Trung tâm đào tạo phát triển xã hội",
+  "content": "Quản lý các hoạt động vui chơi, tổ chức sự kiện cho sinh viên",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70820c65e4396c819e1b"
+  },
+  "name": "Trung tâm phát triển Khoa học quản lý và Ứng dụng công nghệ",
+  "content": "Trung tâm nghiên cứu, phát triển công nghệ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f709b0c65e4396c819e1c"
+  },
+  "name": "Trung tâm hợp tác doanh nghiệp và cựu sinh viên",
+  "content": "Cầu nối giữa các doanh nghiệp, cựu sinh viên và sinh viên",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70b30c65e4396c819e1d"
+  },
+  "name": "Khoa Luật",
+  "content": "Khoa sinh viên ngành luật",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f70d20c65e4396c819e1e"
+  },
+  "name": "Trung tâm ngoại ngữ - tin học – bồi dưỡng văn hóa",
+  "content": "Trung tâm đào tạo 3 chuyên ngành ngoại ngữ - tin học – văn hóa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f71050c65e4396c819e1f"
+  },
+  "name": "Viện chính sách kinh tế và kinh doanh",
+  "content": "Viện nghiên cứu, đề xuất kinh doanh, theo dõi kinh tế",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f71130c65e4396c819e20"
+  },
+  "name": "Khoa Mỹ thuật công nghiệp",
+  "content": "Khoa sinh viên ngành Mỹ thuật công nghiệp",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f712c0c65e4396c819e21"
+  },
+  "name": "Khoa Điện – Điện tử",
+  "content": "Khoa sinh viên ngành Điện – Điện tử",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f713a0c65e4396c819e22"
+  },
+  "name": "Khoa Công nghệ thông tin",
+  "content": "Khoa sinh viên ngành Công nghệ thông tin",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f71450c65e4396c819e23"
+  },
+  "name": "Khoa Quản trị kinh doanh",
+  "content": "Khoa sinh viên ngành Quản trị kinh doanh",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f714e0c65e4396c819e24"
+  },
+  "name": "Khoa Môi trường và bảo hộ lao động",
+  "content": "Khoa sinh viên ngành Môi trường và bảo hộ lao động",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f71580c65e4396c819e25"
+  },
+  "name": "Khoa Lao động công đoàn",
+  "content": "Khoa sinh viên ngành Lao động công đoàn",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f71630c65e4396c819e26"
+  },
+  "name": "Khoa Tài chính ngân hàng",
+  "content": "Khoa sinh viên ngành Tài chính ngân hàng",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "609f716f0c65e4396c819e27"
+  },
+  "name": "Khoa giáo dục quốc tế",
+  "content": "Khoa sinh viên ngành giáo dục quốc tế",
+  "__v": 0
+}]
